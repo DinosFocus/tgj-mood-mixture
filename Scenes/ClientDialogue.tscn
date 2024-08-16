@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cuqpgvosfh3su"]
+
+[node name="Client" type="Node2D"]
