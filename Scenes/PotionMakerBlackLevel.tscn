@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci7p2ktl8e8tf"]
+
+[ext_resource type="PackedScene" uid="uid://bqf8c3r4uihhx" path="res://Scenes/PotionMaker.tscn" id="1_0x3a3"]
+
+[node name="PotionMakerBlackLevel" type="Node2D"]
+
+[node name="PotionMaker" parent="." instance=ExtResource("1_0x3a3")]
