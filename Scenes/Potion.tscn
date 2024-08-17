@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://c5vpecqkd6pd1"]
+[gd_scene load_steps=3 format=3 uid="uid://bo465k7itivg3"]
 
 [ext_resource type="Script" path="res://Scenes/potion.gd" id="1_jvthp"]
 [ext_resource type="Texture2D" uid="uid://pr7v3vdyfpi" path="res://Assets/besher_transparent.png" id="2_aqt7j"]

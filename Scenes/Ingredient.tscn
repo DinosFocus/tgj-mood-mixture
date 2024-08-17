@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwnshur8reyf6"]
+[gd_scene load_steps=3 format=3 uid="uid://dqhcckc6dr1ad"]
 
 [ext_resource type="Script" path="res://Scripts/ingredient.gd" id="1_oj6w1"]
 [ext_resource type="Texture2D" uid="uid://x4tuhp5udv5c" path="res://Assets/erlenmeyer_transparent.png" id="2_fxw6i"]

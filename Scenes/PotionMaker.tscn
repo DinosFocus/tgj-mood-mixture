@@ -1,3 +1,31 @@
-[gd_scene format=3 uid="uid://bqf8c3r4uihhx"]
+[gd_scene load_steps=3 format=3 uid="uid://bqf8c3r4uihhx"]
+
+[ext_resource type="PackedScene" uid="uid://bo465k7itivg3" path="res://Scenes/Potion.tscn" id="1_gkpg3"]
+[ext_resource type="PackedScene" uid="uid://dqhcckc6dr1ad" path="res://Scenes/Ingredient.tscn" id="2_6wyrn"]
 
 [node name="PotionMaker" type="Node2D"]
+position = Vector2(576, 464)
+
+[node name="Potion" parent="." instance=ExtResource("1_gkpg3")]
+position = Vector2(-3.05176e-05, -138)
+scale = Vector2(0.8, 0.8)
+
+[node name="CyanIngridient" parent="." instance=ExtResource("2_6wyrn")]
+position = Vector2(-192, 88)
+scale = Vector2(0.2, 0.2)
+color = Color(0, 1, 1, 1)
+
+[node name="YellowIngridient" parent="." instance=ExtResource("2_6wyrn")]
+position = Vector2(-64, 88)
+scale = Vector2(0.2, 0.2)
+color = Color(1, 1, 0, 1)
+
+[node name="MagentaIngridient" parent="." instance=ExtResource("2_6wyrn")]
+position = Vector2(64, 88)
+scale = Vector2(0.2, 0.2)
+color = Color(1, 0, 1, 1)
+
+[node name="BlackIngridient" parent="." instance=ExtResource("2_6wyrn")]
+position = Vector2(192, 88)
+scale = Vector2(0.2, 0.2)
+color = Color(0, 0, 0, 1)
