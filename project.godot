@@ -13,7 +13,13 @@ config_version=5
 config/name="Mood Mixture"
 run/main_scene="res://Scenes/ClientDialogue.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://Assets/icon.svg"
+boot_splash/image="res://Assets/dinos-focus-icon.png"
+boot_splash/fullsize=false
+config/icon="res://Assets/dinos-focus-icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
 
 [autoload]
 
@@ -58,6 +64,7 @@ history/simple_history_enabled=true
 
 [editor]
 
+movie_writer/movie_file="movie.avi"
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
 

@@ -1,10 +1,54 @@
-[gd_scene format=3 uid="uid://bqf8c3r4uihhx"]
+[gd_scene load_steps=4 format=3 uid="uid://bqf8c3r4uihhx"]
+
+[ext_resource type="Script" path="res://Scripts/potion_maker.gd" id="1_4wung"]
+[ext_resource type="PackedScene" path="res://Scenes/Potion.tscn" id="1_gkpg3"]
+[ext_resource type="PackedScene" path="res://Scenes/IngredientButton.tscn" id="3_3n1m5"]
 
 [node name="PotionMaker" type="Node2D"]
+position = Vector2(576, 464)
+script = ExtResource("1_4wung")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 262.0
-offset_top = 282.0
-offset_right = 720.0
-offset_bottom = 369.0
-text = "Potions !"
+[node name="Potion" parent="." instance=ExtResource("1_gkpg3")]
+position = Vector2(0, -140)
+scale = Vector2(0.75, 0.75)
+
+[node name="CyanIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
+offset_left = -289.0
+offset_top = 8.0
+offset_right = -97.0
+offset_bottom = 200.0
+scale = Vector2(0.75, 0.75)
+color = Color(0, 1, 1, 1)
+
+[node name="YellowIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
+offset_left = -144.0
+offset_top = 8.0
+offset_right = 48.0
+offset_bottom = 200.0
+scale = Vector2(0.75, 0.75)
+color = Color(1, 1, 0, 1)
+
+[node name="MagentaIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
+offset_left = 2.47955e-05
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 200.0
+scale = Vector2(0.75, 0.75)
+color = Color(1, 0, 1, 1)
+
+[node name="BlackIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
+offset_left = 144.0
+offset_top = 8.0
+offset_right = 336.0
+offset_bottom = 200.0
+scale = Vector2(0.75, 0.75)
+color = Color(0, 0, 0, 1)
+
+[node name="TerminerPotionButton" type="Button" parent="."]
+offset_left = 353.0
+offset_top = -87.0
+offset_right = 562.0
+offset_bottom = -44.0
+text = "Finir la potion (debug)"
+
+[connection signal="pressed" from="TerminerPotionButton" to="." method="_on_terminer_potion_button_pressed"]
