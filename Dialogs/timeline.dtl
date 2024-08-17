@@ -1,3 +1,0 @@
-join first_client 0
-first_client (Base): Je veux du rouge !
-set {current_color_request} = "#ff0000"

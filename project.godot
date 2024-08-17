@@ -22,11 +22,11 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"first_client": "res://Dialogs/first_client.dch",
+"client_1": "res://Dialogs/client_1.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"timeline": "res://Dialogs/timeline.dtl"
+"client_1": "res://Dialogs/client_1.dtl"
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -46,10 +46,15 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 variables={
-"current_color_request": ""
+"current_color_crafted": "",
+"current_color_requested": "",
+"current_color_score": -1,
+"current_min_score": 80
 }
 layout/style_list=["res://Dialogs/dialog_style.tres"]
 layout/default_style="res://Dialogs/dialog_style.tres"
+glossary/default_case_sensitive=true
+history/simple_history_enabled=true
 
 [editor]
 
