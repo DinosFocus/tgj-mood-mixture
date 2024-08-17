@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://df0sbv1xfjtla"]
+
+[ext_resource type="Script" path="res://Scripts/ingredient_button.gd" id="1_j26aw"]
+[ext_resource type="PackedScene" uid="uid://dqhcckc6dr1ad" path="res://Scenes/Ingredient.tscn" id="2_6jwk2"]
+
+[node name="IngredientButton" type="Button"]
+custom_minimum_size = Vector2(192, 192)
+anchors_preset = -1
+anchor_left = -0.083
+anchor_top = -0.148
+anchor_right = 0.083
+anchor_bottom = 0.148
+offset_left = -0.383995
+offset_top = -0.0960007
+offset_right = 0.383995
+offset_bottom = 0.0960007
+focus_mode = 0
+action_mode = 0
+keep_pressed_outside = true
+flat = true
+script = ExtResource("1_j26aw")
+
+[node name="Ingridient" parent="." instance=ExtResource("2_6jwk2")]
+position = Vector2(96, 96)
+scale = Vector2(0.25, 0.25)
