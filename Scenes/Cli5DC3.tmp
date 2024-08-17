@@ -11,7 +11,6 @@ offset_left = 967.0
 offset_top = 507.0
 offset_right = 1152.0
 offset_bottom = 544.0
-disabled = true
 text = "Réaliser la potion"
 
 [node name="VN_TextboxLayer" parent="." instance=ExtResource("2_ihfv1")]
