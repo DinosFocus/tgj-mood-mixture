@@ -14,6 +14,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func _enter_tree() -> void:
+	if GameScript.is_potion_ready :
+		Dialogic.VAR.set_variable("potion_ready", true)
+		Dialogic.VAR.set_variable("current_color_ok", GameScript.is_close_to_target)
+
 func _on_go_to_potion_maker_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/PotionMaker.tscn")
 
@@ -23,11 +28,5 @@ func handle_dialogic_variable_change(info:Dictionary) -> void :
 		print("color :" + current_color_requested)
 		$ColorRequestedRectangle.color = current_color_requested # Get the color_requested
 		$GoToPotionMakerButton.disabled = false # Activate the button to go to the potion maker scene
+		GameScript.target_color = Color(current_color_requested)
  
-func check_crafted_color(crafted_color:String) -> void :
-#	TODO : Compute similarity between crafted_color and current_color_requested
-	if current_color_requested == crafted_color :
-		current_color_score = 100
-	else :
-		current_color_score = 0
-	Dialogic.start(current_client) # launch dialog to react to the color crafter

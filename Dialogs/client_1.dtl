@@ -1,11 +1,11 @@
 join client_1 1
-if {current_color_crafted} == "":
+if {potion_ready} == false:
 	# If there isn't a crafted color, launch the dialog explaining the client demand
 	client_1 (Base): Je veux du rouge !
 	set {current_color_requested} = "#ff0000"
 else:
 	# If there is a crafted color, check it
-	if {current_color_score} >= {current_min_score}:
+	if {current_color_ok} == true:
 		client_1 (Base): C'est un super rouge ! Merci !
 	else:
 		client_1 (Base): Mais qu'est ce que c'est que ça ?

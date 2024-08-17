@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bqf8c3r4uihhx"]
 
 [ext_resource type="Script" path="res://Scripts/potion_maker.gd" id="1_4wung"]
-[ext_resource type="PackedScene" uid="uid://bo465k7itivg3" path="res://Scenes/Potion.tscn" id="1_gkpg3"]
-[ext_resource type="PackedScene" uid="uid://df0sbv1xfjtla" path="res://Scenes/IngredientButton.tscn" id="3_3n1m5"]
+[ext_resource type="PackedScene" uid="uid://gonv7wpm3ylu" path="res://Scenes/Potion.tscn" id="1_gkpg3"]
+[ext_resource type="PackedScene" path="res://Scenes/IngredientButton.tscn" id="3_3n1m5"]
 [ext_resource type="PackedScene" uid="uid://b6v4xxtgaxf1m" path="res://Scenes/FormButton.tscn" id="4_8ovmk"]
 
 [node name="PotionMaker" type="Node2D"]
@@ -59,5 +59,14 @@ offset_right = 510.0
 offset_bottom = 95.0
 text = "Terminer et vendre"
 
+[node name="Button" type="Button" parent="."]
+offset_left = 310.0
+offset_top = -112.0
+offset_right = 524.0
+offset_bottom = -63.0
+text = "Terminer (debug)"
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 [connection signal="pressed" from="ResetFormButton" to="." method="_on_reset_form_button_pressed"]
 [connection signal="pressed" from="SubmitFormButton" to="." method="_on_submit_form_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_terminer_potion_button_pressed"]

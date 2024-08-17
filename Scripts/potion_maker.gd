@@ -1,18 +1,20 @@
 extends Node2D
 
-@export var target_color = Color.BLACK
-@export var max_distance = .5
-@export var min_quantity = .5
+@export var target_color = GameScript.target_color
+@export var max_distance = GameScript.max_distance
+@export var min_quantity = GameScript.min_quantity
 
 var fill_speed = .25
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$Potion.target_color = target_color
-	$Potion.max_distance = max_distance
-	$Potion.min_quantity = min_quantity
+	pass # Replace with function body.
+	
+func _on_tree_entered() -> void:
+	$Potion.target_color = GameScript.target_color
+	$Potion.max_distance = GameScript.max_distance
+	$Potion.min_quantity = GameScript.min_quantity
 	update_buttons()
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -24,7 +26,8 @@ func _process(delta: float) -> void:
 
 func _on_terminer_potion_button_pressed() -> void:
 	# Return to the ClientDialog scene
-	get_tree().change_scene_to_file("res://Scenes/ClientDialogue.tscn")
+	$Potion.color = Color(1, 0, 0, 0)  # Force color to Red
+	_on_submit_form_button_pressed()
 
 
 func update_buttons() -> void:
@@ -39,3 +42,6 @@ func _on_reset_form_button_pressed() -> void:
 
 func _on_submit_form_button_pressed() -> void:
 	print($Potion.is_close_to_target())
+	GameScript.is_close_to_target = $Potion.is_close_to_target()
+	GameScript.is_potion_ready = true
+	get_tree().change_scene_to_file("res://Scenes/ClientDialogue.tscn")

@@ -61,4 +61,6 @@ func has_enough_liquid() -> bool:
 
 
 func is_close_to_target() -> bool:
-	return sqrt(pow(color.r - target_color.r, 2) + pow(color.g - target_color.g, 2) + pow(color.b - target_color.b, 2)) <= max_distance
+	var distance = sqrt(pow(color.r - target_color.r, 2) + pow(color.g - target_color.g, 2) + pow(color.b - target_color.b, 2))
+	print("Distance: " + str(distance))
+	return distance <= max_distance

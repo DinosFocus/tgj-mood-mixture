@@ -17,13 +17,10 @@ boot_splash/image="res://Assets/dinos-focus-icon.png"
 boot_splash/fullsize=false
 config/icon="res://Assets/dinos-focus-icon.svg"
 
-[display]
-
-window/stretch/mode="viewport"
-
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+GameScript="*res://Scripts/GameScript.gd"
 
 [dialogic]
 
@@ -52,15 +49,18 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 variables={
-"current_color_crafted": "",
+"current_color_ok": false,
 "current_color_requested": "",
-"current_color_score": -1,
-"current_min_score": 80
+"potion_ready": false
 }
 layout/style_list=["res://Dialogs/dialog_style.tres"]
 layout/default_style="res://Dialogs/dialog_style.tres"
 glossary/default_case_sensitive=true
 history/simple_history_enabled=true
+
+[display]
+
+window/stretch/mode="viewport"
 
 [editor]
 

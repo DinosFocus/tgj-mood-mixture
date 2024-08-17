@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cuqpgvosfh3su"]
 
 [ext_resource type="Script" path="res://Scripts/client_dialogue.gd" id="1_besw2"]
-[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="2_ihfv1"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://Dialogs/dialog_style/VisualNovelTextbox/custom_vn_textbox_layer.tscn" id="2_ihfv1"]
 
 [node name="Client" type="Node2D"]
 script = ExtResource("1_besw2")
