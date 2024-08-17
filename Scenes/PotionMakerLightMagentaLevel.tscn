@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://rxqme33xfytc"]
+
+[ext_resource type="PackedScene" uid="uid://bqf8c3r4uihhx" path="res://Scenes/PotionMaker.tscn" id="1_d0fj3"]
+
+[node name="PotionMakerLightMagentaLevel" type="Node2D"]
+
+[node name="PotionMaker" parent="." instance=ExtResource("1_d0fj3")]
+target_color = Color(1, 0.501961, 1, 1)

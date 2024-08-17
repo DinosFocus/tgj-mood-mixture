@@ -21,21 +21,21 @@ offset_bottom = 200.0
 scale = Vector2(0.75, 0.75)
 color = Color(0, 1, 1, 1)
 
-[node name="YellowIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
+[node name="MagentaIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
 offset_left = -144.0
 offset_top = 8.0
 offset_right = 48.0
 offset_bottom = 200.0
 scale = Vector2(0.75, 0.75)
-color = Color(1, 1, 0, 1)
+color = Color(1, 0, 1, 1)
 
-[node name="MagentaIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
-offset_left = 2.47955e-05
+[node name="YellowIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
+offset_left = 0.0
 offset_top = 8.0
 offset_right = 192.0
 offset_bottom = 200.0
 scale = Vector2(0.75, 0.75)
-color = Color(1, 0, 1, 1)
+color = Color(1, 1, 0, 1)
 
 [node name="BlackIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
 offset_left = 144.0

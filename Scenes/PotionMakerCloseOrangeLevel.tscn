@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4w738i4mn6lc"]
+
+[ext_resource type="PackedScene" uid="uid://bqf8c3r4uihhx" path="res://Scenes/PotionMaker.tscn" id="1_e7p8x"]
+
+[node name="PotionMakerCloseOrangeLevel" type="Node2D"]
+
+[node name="PotionMaker" parent="." instance=ExtResource("1_e7p8x")]
+target_color = Color(1, 0.25098, 0, 1)
+max_distance = 0.25
