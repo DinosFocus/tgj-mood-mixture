@@ -3,7 +3,10 @@ extends Node2D
 var Mixbox = preload("res://addons/mixbox/mixbox.gd")
 
 var color = Color.BLACK
+var target_color = Color.RED
+var max_distance = .5
 var quantity = 0
+var min_quantity = .5
 
 var bottom_height
 var max_height
@@ -19,11 +22,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func update_height():
+
+func update_height() -> void:
 	var height = quantity * (max_height-bottom_height) + bottom_height
 	$Liquid.polygon[2].y = height
 	$Liquid.polygon[3].y = height
-	
+
 
 func add_liquid(quant: float, col: Color) -> void:
 	# On gère le dépassement total
@@ -39,3 +43,22 @@ func add_liquid(quant: float, col: Color) -> void:
 	color = Mixbox.lerp(color, col, ratio)
 	$Liquid.color = color
 	update_height()
+
+
+func empty_liquid() -> void:
+	quantity = 0
+	color = Color.BLACK
+	$Liquid.color = color
+	update_height()
+
+
+func is_empty() -> bool:
+	return quantity == 0
+
+
+func has_enough_liquid() -> bool:
+	return quantity >= min_quantity
+
+
+func is_close_to_target() -> bool:
+	return sqrt(pow(color.r - target_color.r, 2) + pow(color.g - target_color.g, 2) + pow(color.b - target_color.b, 2)) <= max_distance
