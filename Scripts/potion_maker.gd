@@ -3,6 +3,7 @@ extends Node2D
 @export var target_color = GameScript.target_color
 @export var max_distance = GameScript.max_distance
 @export var min_quantity = GameScript.min_quantity
+@export var show_target = true
 
 var fill_speed = .25
 
@@ -14,7 +15,14 @@ func _on_tree_entered() -> void:
 	$Potion.target_color = GameScript.target_color
 	$Potion.max_distance = GameScript.max_distance
 	$Potion.min_quantity = GameScript.min_quantity
+	$Objectif/Rect.color = target_color
 	update_buttons()
+	if show_target:
+		$Objectif/Rect.visible = true
+		$Objectif/Unknown.visible = false
+	else:
+		$Objectif/Rect.visible = false
+		$Objectif/Unknown.visible = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/potion_maker.gd" id="1_4wung"]
 [ext_resource type="PackedScene" uid="uid://gonv7wpm3ylu" path="res://Scenes/Potion.tscn" id="1_gkpg3"]
 [ext_resource type="PackedScene" path="res://Scenes/IngredientButton.tscn" id="3_3n1m5"]
-[ext_resource type="PackedScene" uid="uid://b6v4xxtgaxf1m" path="res://Scenes/FormButton.tscn" id="4_8ovmk"]
+[ext_resource type="PackedScene" path="res://Scenes/FormButton.tscn" id="4_8ovmk"]
 
 [node name="PotionMaker" type="Node2D"]
 position = Vector2(576, 464)
@@ -65,6 +65,29 @@ offset_top = -112.0
 offset_right = 524.0
 offset_bottom = -63.0
 text = "Terminer (debug)"
+
+[node name="Objectif" type="Node" parent="."]
+
+[node name="LabelObjectif" type="Label" parent="Objectif"]
+offset_left = 841.0
+offset_top = 59.0
+offset_right = 993.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 35
+text = "Objectif :"
+
+[node name="Rect" type="Polygon2D" parent="Objectif"]
+position = Vector2(-14, 1)
+polygon = PackedVector2Array(1025, 65, 1117, 65, 1118, 106, 1025, 106)
+
+[node name="Unknown" type="Label" parent="Objectif"]
+visible = false
+offset_left = 1030.0
+offset_top = 62.0
+offset_right = 1078.0
+offset_bottom = 111.0
+theme_override_font_sizes/font_size = 35
+text = "???"
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 [connection signal="pressed" from="ResetFormButton" to="." method="_on_reset_form_button_pressed"]
