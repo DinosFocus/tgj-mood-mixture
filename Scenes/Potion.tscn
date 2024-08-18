@@ -1,13 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://gonv7wpm3ylu"]
 
 [ext_resource type="Script" path="res://Scripts/potion.gd" id="1_jvthp"]
-[ext_resource type="Texture2D" uid="uid://pr7v3vdyfpi" path="res://Assets/besher_transparent.png" id="2_aqt7j"]
+[ext_resource type="Texture2D" uid="uid://hlcbx1i82jge" path="res://Assets/besher_blanc_transparent.png" id="2_hn4r5"]
 
 [node name="Potion" type="Node2D"]
 script = ExtResource("1_jvthp")
 
 [node name="Liquid" type="Polygon2D" parent="."]
-polygon = PackedVector2Array(-60, 80, 60, 80, 64, -80, -62, -80)
+polygon = PackedVector2Array(48, 88, 64, 80, 64, -88, -64, -88, -64, 80, -48, 88)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_aqt7j")
+position = Vector2(5.96046e-06, 3.33786e-06)
+scale = Vector2(1.03644, 1.09804)
+texture = ExtResource("2_hn4r5")
