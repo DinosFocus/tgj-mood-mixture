@@ -5,6 +5,7 @@ if {potion_ready} == false:
 	set {current_color_requested} = "#ff0000"
 	set {max_distance} = 0.6
 	set {min_quantity} = 0.5
+	set {target_color_visible} = true
 else:
 	# If there is a crafted color, check it
 	if {current_color_ok} == true:

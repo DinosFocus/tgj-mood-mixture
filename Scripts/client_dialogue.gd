@@ -7,18 +7,12 @@ var list_client = [
 	"client_2"
 ]
 
-var threshold_score_great = list_client.size() * 0.8
-var threshold_score_ok =  list_client.size() * 0.5
-
-
 func get_current_client() -> String :
 	return list_client[GameScript.current_client_index]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	AudioPlayer.play_music_level()
-	Dialogic.VAR.set_variable("threshold_score_great", threshold_score_great)
-	Dialogic.VAR.set_variable("threshold_score_ok", threshold_score_ok)
 	launch_dialogue()
 	pass # Replace with function body.
 
@@ -63,6 +57,8 @@ func handle_dialogic_variable_change(info:Dictionary) -> void : # Au changement 
 		$ColorRequestedRectangle.color = current_color_requested # Get the color_requested
 		$GoToPotionMakerButton.disabled = false # Activate the button to go to the potion maker scene
 		GameScript.target_color = Color(current_color_requested)
+	elif info.get("variable") == "target_color_visible" :
+		GameScript.target_color_visible = Dialogic.VAR.target_color_visible
  
 func _on_timeline_ended():	# A la fin d'un dialogue
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
@@ -79,6 +75,10 @@ func _on_timeline_ended():	# A la fin d'un dialogue
 			update_score()
 			GameScript.current_client_index += 1
 			if GameScript.current_client_index >= list_client.size() : # On a dépassé la liste de clients, c'est la fin !
+				var threshold_score_great = list_client.size() * GameScript.score_max_grantable * 0.8
+				var threshold_score_ok =  list_client.size() * GameScript.score_max_grantable * 0.5
+				Dialogic.VAR.set_variable("threshold_score_great", threshold_score_great)
+				Dialogic.VAR.set_variable("threshold_score_ok", threshold_score_ok)
 				Dialogic.VAR.set_variable("score", GameScript.score) # Pour communiquer le score à Dialogic
 				GameScript.phase_end = true
 		elif GameScript.phase_intro : # The intro is over, launch the first client !

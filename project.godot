@@ -20,8 +20,8 @@ config/icon="res://Assets/dinos-focus-icon.svg"
 [autoload]
 
 GameScript="*res://Scripts/GameScript.gd"
-AudioPlayer="*res://Scenes/audio_player.tscn"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+AudioPlayer="*res://Scenes/audio_player.tscn"
 
 [dialogic]
 
@@ -61,6 +61,7 @@ variables={
 "min_quantity": 0.5,
 "potion_ready": false,
 "score": 0,
+"target_color_visible": true,
 "threshold_score_great": 0,
 "threshold_score_ok": 0
 }

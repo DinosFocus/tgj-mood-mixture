@@ -10,6 +10,7 @@ var target_color = Color.BLACK
 var max_distance = 1
 var min_quantity = .5
 var score_max_grantable = 100
+var target_color_visible = false
 
 var is_close_to_target = false
 var is_potion_ready = false
