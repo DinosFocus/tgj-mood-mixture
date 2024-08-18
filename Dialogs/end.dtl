@@ -3,15 +3,15 @@ magic_book (Base): Et voilà, la journée est finie !\
 Alors, comment ça s'est passé ?
 if {score} >= {threshold_score_great}:
 	magic_book: Ouah ! Mais c'est incroyable !\
-On a plus aucune dettes grâce à ton travail d'aujourd'hui !\
-Félicitation !
+On n'a plus aucune dette grâce à ton travail d'aujourd'hui !\
+Félicitations !
 	magic_book: Je vais de ce pas à la banque reprendre des dettes pour demain, on ne peut pas s'arrêter sur une si bonne lancée !
 elif {score} >= {threshold_score_ok}:
 	magic_book: Eh ben c'est pas trop mal, on peut au moins s'acheter à manger pour ce soir.
 	magic_book: Regarde, j'ai pris des pâtes bleues.
 else:
 	magic_book: Attends quoi ? Comment est ce qu'on peut avoir encore plus de dettes que ce matin ?\
-Ca marche pas comme ça le commerce normalement ! \
-Il fallait faire payer les gens pour leurs potions, pas les dédommager pour ne pas avoir trouver ce qu'ils voulaient !
+Ça marche pas comme ça le commerce normalement ! \
+Il fallait faire payer les gens pour leurs potions, pas les dédommager pour ne pas avoir trouvé ce qu'ils voulaient !
 	magic_book: Bon, ben ça fera encore plus de dettes à rembourser demain...
 [signal arg="end"]

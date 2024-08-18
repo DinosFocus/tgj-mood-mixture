@@ -16,14 +16,15 @@ func _on_tree_entered() -> void:
 	$Potion.target_color = GameScript.target_color
 	$Potion.max_distance = GameScript.max_distance
 	$Potion.min_quantity = GameScript.min_quantity
-	$Objectif/Rect.color = target_color
+	show_target = GameScript.target_color_visible
+	$TargetColor/Rect.color = target_color
 	update_buttons()
 	if show_target:
-		$Objectif/Rect.visible = true
-		$Objectif/Unknown.visible = false
+		$TargetColor/Rect.visible = true
+		$TargetColor/Unknown.visible = false
 	else:
-		$Objectif/Rect.visible = false
-		$Objectif/Unknown.visible = true
+		$TargetColor/Rect.visible = false
+		$TargetColor/Unknown.visible = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

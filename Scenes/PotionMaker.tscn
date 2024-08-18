@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bqf8c3r4uihhx"]
+[gd_scene load_steps=8 format=3 uid="uid://bqf8c3r4uihhx"]
 
 [ext_resource type="Script" path="res://Scripts/potion_maker.gd" id="1_4wung"]
 [ext_resource type="PackedScene" uid="uid://gonv7wpm3ylu" path="res://Scenes/Potion.tscn" id="1_gkpg3"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://df0sbv1xfjtla" path="res://Scenes/IngredientButton.tscn" id="3_3n1m5"]
 [ext_resource type="PackedScene" uid="uid://b6v4xxtgaxf1m" path="res://Scenes/FormButton.tscn" id="4_8ovmk"]
 [ext_resource type="AudioStream" uid="uid://ctq4vwf4r5e0p" path="res://Assets/pour_liquid.mp3" id="5_72inl"]
+[ext_resource type="PackedScene" uid="uid://djm3hkstwicuu" path="res://Scenes/TargetColor.tscn" id="6_o6n3h"]
 
 [node name="PotionMaker" type="Node2D"]
 position = Vector2(576, 464)
@@ -69,48 +70,14 @@ text = "Vendre la potion"
 color = Color(0, 1, 0, 1)
 
 [node name="Button" type="Button" parent="."]
+visible = false
 offset_left = 310.0
 offset_top = -112.0
 offset_right = 524.0
 offset_bottom = -63.0
 text = "Terminer (debug)"
 
-[node name="Objectif" type="Node" parent="."]
-
-[node name="LabelObjectif" type="Label" parent="Objectif"]
-offset_left = 408.0
-offset_top = 16.0
-offset_right = 568.0
-offset_bottom = 80.0
-theme_override_font_sizes/font_size = 35
-text = "Objectif :"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Rect" type="Polygon2D" parent="Objectif"]
-position = Vector2(-440, -48)
-polygon = PackedVector2Array(1024, 64, 1184, 64, 1184, 128, 1024, 128)
-
-[node name="Unknown" type="Label" parent="Objectif"]
-visible = false
-offset_left = 584.0
-offset_top = 16.0
-offset_right = 744.0
-offset_bottom = 80.0
-theme_override_font_sizes/font_size = 35
-text = "???"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Line2D" type="Line2D" parent="Objectif"]
-position = Vector2(584, 17)
-points = PackedVector2Array(0, -1, 160, -1, 160, 63, 0, 63)
-closed = true
-width = 2.0
-default_color = Color(0, 0, 0, 0.8)
-joint_mode = 2
-begin_cap_mode = 2
-end_cap_mode = 2
+[node name="TargetColor" parent="." instance=ExtResource("6_o6n3h")]
 
 [node name="Glouglou" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_72inl")
