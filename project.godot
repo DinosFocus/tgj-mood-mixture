@@ -19,13 +19,14 @@ config/icon="res://Assets/dinos-focus-icon.svg"
 
 [autoload]
 
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 GameScript="*res://Scripts/GameScript.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
 directories/dch_directory={
 "client_1": "res://Dialogs/client_1.dch",
+"client_2": "res://Dialogs/client_2.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={

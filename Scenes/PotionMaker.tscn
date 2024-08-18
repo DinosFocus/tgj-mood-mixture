@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/potion_maker.gd" id="1_4wung"]
 [ext_resource type="PackedScene" uid="uid://gonv7wpm3ylu" path="res://Scenes/Potion.tscn" id="1_gkpg3"]
-[ext_resource type="PackedScene" path="res://Scenes/IngredientButton.tscn" id="3_3n1m5"]
+[ext_resource type="PackedScene" uid="uid://df0sbv1xfjtla" path="res://Scenes/IngredientButton.tscn" id="3_3n1m5"]
 [ext_resource type="PackedScene" uid="uid://b6v4xxtgaxf1m" path="res://Scenes/FormButton.tscn" id="4_8ovmk"]
 
 [node name="PotionMaker" type="Node2D"]

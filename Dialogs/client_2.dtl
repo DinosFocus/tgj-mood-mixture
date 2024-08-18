@@ -1,0 +1,11 @@
+join client_2 1
+if {potion_ready} == false:
+	# If there isn't a crafted color, launch the dialog explaining the client demand
+	client_2 (Base): *murmures inintelligibles* (Mais que peut bien vouloir ce mage là ?)
+	set {current_color_requested} = "#0000FF"
+else:
+	# If there is a crafted color, check it
+	if {current_color_ok} == true:
+		client_2 (Base): *murmures inintelligibles de satisfaction* (Ah, c'est donc ça qu'il voulait !)
+	else:
+		client_2 (Base): *murmures inintelligibles de déception* (Visiblement, ce n'est pas ce qu'il attendait...)

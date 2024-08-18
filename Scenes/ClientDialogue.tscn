@@ -18,6 +18,7 @@ text = "Réaliser la potion"
 [node name="VN_TextboxLayer" parent="." instance=ExtResource("2_ihfv1")]
 
 [node name="ColorRequestedRectangle" type="Polygon2D" parent="."]
+visible = false
 position = Vector2(987, 351)
 scale = Vector2(0.169657, 0.65337)
 polygon = PackedVector2Array(0, 0, 0, 84.179, 694, 83, 695.52, 1.79105)
