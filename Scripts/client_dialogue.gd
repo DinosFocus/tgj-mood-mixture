@@ -41,6 +41,10 @@ func _enter_tree() -> void:
 		Dialogic.VAR.set_variable("current_color_ok", GameScript.is_close_to_target)
 
 func _on_go_to_potion_maker_button_pressed() -> void:
+	# Get variables from the dialog :
+	GameScript.min_quantity = Dialogic.VAR.min_quantity
+	GameScript.max_distance = Dialogic.VAR.max_distance
+	
 	get_tree().change_scene_to_file("res://Scenes/PotionMaker.tscn")
 
 func handle_dialogic_variable_change(info:Dictionary) -> void : # Au changement de variable par Dialogic

@@ -56,6 +56,8 @@ text/autopauses={}
 variables={
 "current_color_ok": false,
 "current_color_requested": "",
+"max_distance": 0.5,
+"min_quantity": 0.5,
 "potion_ready": false,
 "score": 0,
 "threshold_score_great": 0,

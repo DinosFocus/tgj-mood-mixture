@@ -3,6 +3,8 @@ if {potion_ready} == false:
 	# If there isn't a crafted color, launch the dialog explaining the client demand
 	client_1 (Base): Je veux du rouge !
 	set {current_color_requested} = "#ff0000"
+	set {max_distance} = 0.6
+	set {min_quantity} = 0.5
 else:
 	# If there is a crafted color, check it
 	if {current_color_ok} == true:
