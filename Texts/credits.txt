@@ -1,0 +1,5 @@
+Red_mage : https://www.deviantart.com/elrokfoxx/art/FF14-Red-Mage-Pixel-681303013
+Blue_mage : https://www.reddit.com/r/PixelArt/comments/1c3i087/the_mysterious_blue_mage/
+Magic_book : <a href="https://www.freepik.com/free-vector/magic-spell-books-fantasy-alchemy-grimoires-set_33819338.htm">Image by upklyak on Freepik</a>
+Backgrounds : Novel AI
+Système de dialogues : https://github.com/dialogic-godot/dialogic/blob/main/LICENSE

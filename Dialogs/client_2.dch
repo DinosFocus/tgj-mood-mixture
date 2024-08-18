@@ -10,18 +10,18 @@
 },
 "default_portrait": "Base",
 "description": "",
-"display_name": "Mage rouge",
+"display_name": "Mage bleu",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
 "Base": {
 "export_overrides": {
-"image": "\"res://Assets/characters/red_mage.png\""
+"image": "\"res://Assets/characters/blue_mage.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1.0,
+"scale": 1,
 "scene": ""
 }
 },

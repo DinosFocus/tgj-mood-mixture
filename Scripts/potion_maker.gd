@@ -60,5 +60,6 @@ func _on_reset_form_button_pressed() -> void:
 func _on_submit_form_button_pressed() -> void:
 	print($Potion.is_close_to_target())
 	GameScript.is_close_to_target = $Potion.is_close_to_target()
+	GameScript.distance_to_target = $Potion.compute_distance()
 	GameScript.is_potion_ready = true
 	get_tree().change_scene_to_file("res://Scenes/ClientDialogue.tscn")
