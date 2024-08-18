@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cw4kdj0w8rr2x"]
 
 [ext_resource type="Script" path="res://Scripts/ingredient.gd" id="1_oj6w1"]
-[ext_resource type="Texture2D" uid="uid://x4tuhp5udv5c" path="res://Assets/erlenmeyer_transparent.png" id="2_fxw6i"]
+[ext_resource type="Texture2D" uid="uid://dc50yex7yeppc" path="res://Assets/erlenmeyer_blanc_transparent.png" id="2_7al41"]
 
 [node name="Ingridient" type="Node2D"]
 script = ExtResource("1_oj6w1")
@@ -10,4 +10,6 @@ script = ExtResource("1_oj6w1")
 polygon = PackedVector2Array(-150, -56, -264, 245, -260, 298, -229, 329, -109, 367, -2, 374, 113, 366, 213, 338, 262, 295, 265, 245, 155, -56)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_fxw6i")
+texture = ExtResource("2_7al41")
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]

@@ -1,4 +1,4 @@
-extends Node2D
+extends Line2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,11 +12,10 @@ func _process(delta: float) -> void:
 
 
 func set_color(color: Color) -> void:
-	$Liquid.color = color
-	$Sprite2D.modulate.r = .8 + color.r / 5
-	$Sprite2D.modulate.g = .8 + color.g / 5
-	$Sprite2D.modulate.b = .8 + color.b / 5
+	default_color.r = .8 + color.r / 5
+	default_color.g = .8 + color.g / 5
+	default_color.b = .8 + color.b / 5
 
 
 func set_alpha(alpha: float) -> void:
-	$Sprite2D.modulate.a = alpha
+	default_color.a = alpha
