@@ -6,11 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://df0sbv1xfjtla" path="res://Scenes/IngredientButton.tscn" id="3_3n1m5"]
 [ext_resource type="PackedScene" uid="uid://b6v4xxtgaxf1m" path="res://Scenes/FormButton.tscn" id="4_8ovmk"]
 [ext_resource type="AudioStream" uid="uid://ctq4vwf4r5e0p" path="res://Assets/pour_liquid.mp3" id="5_72inl"]
-[ext_resource type="PackedScene" uid="uid://djm3hkstwicuu" path="res://Scenes/TargetColor.tscn" id="6_o6n3h"]
+[ext_resource type="PackedScene" path="res://Scenes/TargetColor.tscn" id="6_o6n3h"]
 
 [node name="PotionMaker" type="Node2D"]
 position = Vector2(576, 464)
 script = ExtResource("1_4wung")
+show_target = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -140)

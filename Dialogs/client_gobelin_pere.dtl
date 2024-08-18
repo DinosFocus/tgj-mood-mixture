@@ -1,0 +1,19 @@
+join client_gobelin_pere 1
+if {potion_ready} == false:
+	# If there isn't a crafted color, launch the dialog explaining the client demand
+	client_gobelin_pere (Base): Bonjour ! J'ai l'impression que ma teinte de peau est un peu fade en ce moment.\
+Je crois que je vieillis, aidez moi à conserver mon teint de jeunesse !
+	set {current_color_requested} = "#9efd38"
+	set {max_distance} = 0.7
+	set {min_quantity} = 0.8
+	set {target_color_visible} = false
+else:
+	# If there is a crafted color, check it
+	if {current_color_ok} == true:
+		client_gobelin_pere (Base): Ah, quel magnifique vert Histawy !\
+Je me sens déjà plus jeune rien qu'en regardant cette couleur.\
+Je me demande si ça m'aidera à comprendre les jeunes d'aujourd'hui...
+	else:
+		client_gobelin_pere (Base): Oula, je ne sais pas ce que vous avez fait, mais ce n'est pas ce que je voulais.\
+Je vous ai demandé une couleur qui me rajeunisse, pas une couleur qui me fasse ressembler à un zombie.\
+Je vous en prie, essayez encore !

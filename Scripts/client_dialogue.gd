@@ -5,6 +5,8 @@ var current_color_score = -1
 var list_client = [
 	"client_1",
 	"client_2",
+	"client_gobelin_pere",
+	"client_gobelin_fils",
 	"client_final"
 ]
 
@@ -40,6 +42,7 @@ func update_score() :
 
 func _enter_tree() -> void:
 	update_score()
+	$GoToPotionMakerButton.visible = false # Cache le bouton tant qu'on a pas fini le dialogue
 	if GameScript.is_potion_ready :
 		Dialogic.VAR.set_variable("potion_ready", true)
 		Dialogic.VAR.set_variable("current_color_ok", GameScript.is_close_to_target)
@@ -56,7 +59,7 @@ func handle_dialogic_variable_change(info:Dictionary) -> void : # Au changement 
 		current_color_requested = Dialogic.VAR.current_color_requested
 		print("color :" + current_color_requested)
 		$ColorRequestedRectangle.color = current_color_requested # Get the color_requested
-		$GoToPotionMakerButton.disabled = false # Activate the button to go to the potion maker scene
+		$GoToPotionMakerButton.visible = true # Activate the button to go to the potion maker scene
 		GameScript.target_color = Color(current_color_requested)
 	elif info.get("variable") == "target_color_visible" :
 		GameScript.target_color_visible = Dialogic.VAR.target_color_visible

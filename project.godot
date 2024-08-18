@@ -29,6 +29,8 @@ directories/dch_directory={
 "client_1": "res://Dialogs/client_1.dch",
 "client_2": "res://Dialogs/client_2.dch",
 "client_final": "res://Dialogs/client_final.dch",
+"client_gobelin_fils": "res://Dialogs/client_gobelin_fils.dch",
+"client_gobelin_pere": "res://Dialogs/client_gobelin_pere.dch",
 "magic_book": "res://Assets/characters/magic_book.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
