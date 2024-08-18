@@ -1,4 +1,4 @@
-join magic_book 1 [animation="Bounce In" wait="true"]
+join magic_book 1 [animation="Bounce In" length="1" wait="true"]
 magic_book (Base): 🎵 Le soleil vient de se lever,\
 Encore une belle journée\
 Et elle va bientôt arriver, la pile de factures à payer 🎵

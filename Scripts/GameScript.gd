@@ -1,9 +1,10 @@
 extends Node
 
 var phase_intro = true # Whether or not the intro must be done
+var phase_end = false # Whether or not the end must be done
 
 var target_color = Color.BLACK
-var max_distance = 0.5
+var max_distance = 1
 var min_quantity = .5
 
 var is_close_to_target = false

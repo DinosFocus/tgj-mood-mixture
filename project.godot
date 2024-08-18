@@ -33,6 +33,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "client_1": "res://Dialogs/client_1.dtl",
 "client_2": "res://Dialogs/client_2.dtl",
+"end": "res://Dialogs/end.dtl",
 "intro": "res://Dialogs/intro.dtl"
 }
 text/letter_speed=0.01
@@ -55,7 +56,10 @@ text/autopauses={}
 variables={
 "current_color_ok": false,
 "current_color_requested": "",
-"potion_ready": false
+"potion_ready": false,
+"score": 0,
+"threshold_score_great": 0,
+"threshold_score_ok": 0
 }
 layout/style_list=["res://Dialogs/dialog_style.tres"]
 layout/default_style="res://Dialogs/dialog_style.tres"
