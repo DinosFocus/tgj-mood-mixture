@@ -5,6 +5,7 @@ var current_color_score = -1
 var list_client = [
 	"client_1",
 	"client_2",
+	"client_polaritoon",
 	"client_final"
 ]
 
