@@ -2,7 +2,7 @@ join client_polaritoon 1
 if {potion_ready} == false:
 	# If there isn't a crafted color, launch the dialog explaining the client demand
 	client_polaritoon (Base): Hello world!\
-J'ai dû me matéraliser auprès de vous pour vous amener une requête.
+J'ai dû me matérialiser auprès de vous pour vous amener une requête.
 	client_polaritoon: Voyez-vous, j'aimerais qu'on m'aide à faire le plein... d'hexadécimal.\
 Ceci à fin de rétablir mon équilibre intérieur.
 	set {current_color_requested} = "#808080"
@@ -12,7 +12,7 @@ Ceci à fin de rétablir mon équilibre intérieur.
 else:
 	# If there is a crafted color, check it
 	if {current_color_ok} == true:
-		client_1 (Base): Merci pour cette mixture sans saveur. C'est exactement ce dont j'avais besoin.
+		client_polaritoon (Base): Merci pour cette mixture sans saveur. C'est exactement ce dont j'avais besoin.
 	else:
-		client_1 (Base): Hmm ce n'est pas très carré tout ça... enfin... je veux dire... pas très hexagonal.
+		client_polaritoon (Base): Hmm ce n'est pas très carré tout ça... enfin... je veux dire... pas très hexagonal.
 		Je vais en perdre mon zen. À moi, il ne me faut pas trop d'excès.
