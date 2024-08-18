@@ -29,4 +29,10 @@ position = Vector2(577, 323.5)
 scale = Vector2(1.5, 1.26758)
 texture = ExtResource("3_cj30a")
 
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 1.0
+offset_right = 303.0
+offset_bottom = 43.0
+text = "💰 : "
+
 [connection signal="pressed" from="GoToPotionMakerButton" to="." method="_on_go_to_potion_maker_button_pressed"]

@@ -59,8 +59,11 @@ func is_empty() -> bool:
 func has_enough_liquid() -> bool:
 	return quantity >= min_quantity
 
+func compute_distance() -> float :
+	var distance = sqrt(pow(color.r - target_color.r, 2) + pow(color.g - target_color.g, 2) + pow(color.b - target_color.b, 2))
+	return distance
 
 func is_close_to_target() -> bool:
-	var distance = sqrt(pow(color.r - target_color.r, 2) + pow(color.g - target_color.g, 2) + pow(color.b - target_color.b, 2))
+	var distance = compute_distance()
 	print("Distance: " + str(distance))
 	return distance <= max_distance

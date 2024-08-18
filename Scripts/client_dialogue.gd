@@ -7,12 +7,17 @@ var list_client = [
 	"client_2"
 ]
 
+var threshold_score_great = list_client.size() * 0.8
+var threshold_score_ok =  list_client.size() * 0.5
+
 
 func get_current_client() -> String :
 	return list_client[GameScript.current_client_index]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Dialogic.VAR.set_variable("threshold_score_great", threshold_score_great)
+	Dialogic.VAR.set_variable("threshold_score_ok", threshold_score_ok)
 	launch_dialogue()
 	pass # Replace with function body.
 
@@ -34,8 +39,11 @@ func launch_dialogue() :
 	else :
 		Dialogic.start(get_current_client()) # launch dialog
 
+func update_score() :
+	$ScoreLabel.text = "💰 : " + str(GameScript.score)
 
 func _enter_tree() -> void:
+	update_score()
 	if GameScript.is_potion_ready :
 		Dialogic.VAR.set_variable("potion_ready", true)
 		Dialogic.VAR.set_variable("current_color_ok", GameScript.is_close_to_target)
@@ -58,7 +66,6 @@ func handle_dialogic_variable_change(info:Dictionary) -> void : # Au changement 
 func _on_timeline_ended():	# A la fin d'un dialogue
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	
-	
 	if GameScript.phase_end == true : # On a déjà lancé le dialogue de fin, et celui ci vient de se terminer, on switch donc au game over
 		get_tree().change_scene_to_file("res://Scenes/EndGame.tscn")
 	
@@ -67,8 +74,11 @@ func _on_timeline_ended():	# A la fin d'un dialogue
 		#- sinon, on relance le client en réinitialisant les variables de potion réalisé
 	if GameScript.is_potion_ready or GameScript.phase_intro :	# On ne gère que le cas où la potion est déjà prête, sinon c'est potentiellement juste la fin de la demande du client
 		if GameScript.is_close_to_target :	#Client content, on passe à la suite
+			GameScript.add_score() # On demande d'ajouter le score !
+			update_score()
 			GameScript.current_client_index += 1
 			if GameScript.current_client_index >= list_client.size() : # On a dépassé la liste de clients, c'est la fin !
+				Dialogic.VAR.set_variable("score", GameScript.score) # Pour communiquer le score à Dialogic
 				GameScript.phase_end = true
 		elif GameScript.phase_intro : # The intro is over, launch the first client !
 			GameScript.phase_intro = false
