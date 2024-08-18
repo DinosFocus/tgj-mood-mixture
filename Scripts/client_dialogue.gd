@@ -26,7 +26,11 @@ func launch_dialogue() :
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
 	
 	print("Potion ready : " + str(Dialogic.VAR.get("potion_ready")))
-	Dialogic.start(get_current_client()) # launch dialog
+	
+	if GameScript.phase_intro :
+		Dialogic.start("intro")
+	else :
+		Dialogic.start(get_current_client()) # launch dialog
 
 
 func _enter_tree() -> void:
@@ -51,10 +55,15 @@ func _on_timeline_ended():	# A la fin d'un dialogue
 	#Deux cas : 
 		#- soit le client est content, et on passe au suivant
 		#- sinon, on relance le client en réinitialisant les variables de potion réalisé
-	if GameScript.is_potion_ready :	# On ne gère que le cas où la potion est déjà prête, sinon c'est potentiellement juste la fin de la demande du client
+	if GameScript.is_potion_ready or GameScript.phase_intro :	# On ne gère que le cas où la potion est déjà prête, sinon c'est potentiellement juste la fin de la demande du client
 		if GameScript.is_close_to_target :	#Client content, on passe à la suite
 			GameScript.current_client_index += 1
+		elif GameScript.phase_intro : # The intro is over, launch the first client !
+			GameScript.phase_intro = false
 		# Dans tous les cas, on reset la potion, et on relance le dialogue (qui sera soit passé au client suivant, soit on revient au même client) :
 		GameScript.reset_potion()
 		launch_dialogue()
+	
+	
+	
 	

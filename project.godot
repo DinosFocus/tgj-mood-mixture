@@ -27,10 +27,13 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "client_1": "res://Dialogs/client_1.dch",
 "client_2": "res://Dialogs/client_2.dch",
+"magic_book": "res://Assets/characters/magic_book.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"client_1": "res://Dialogs/client_1.dtl"
+"client_1": "res://Dialogs/client_1.dtl",
+"client_2": "res://Dialogs/client_2.dtl",
+"intro": "res://Dialogs/intro.dtl"
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

@@ -1,5 +1,7 @@
 extends Node
 
+var phase_intro = true # Whether or not the intro must be done
+
 var target_color = Color.BLACK
 var max_distance = 0.5
 var min_quantity = .5
