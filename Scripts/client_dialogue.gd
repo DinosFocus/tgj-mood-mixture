@@ -6,6 +6,7 @@ var current_client = "client_1"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	AudioPlayer.play_music_level()
 	Dialogic.start(current_client) # launch dialog
 	Dialogic.VAR.variable_was_set.connect(handle_dialogic_variable_change)
 	pass # Replace with function body.
