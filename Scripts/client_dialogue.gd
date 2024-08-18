@@ -7,6 +7,7 @@ var list_client = [
 	"client_2",
 	"client_gobelin_pere",
 	"client_gobelin_fils",
+	"client_polaritoon",
 	"client_final"
 ]
 
@@ -22,14 +23,14 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-	
+
 func launch_dialogue() :
 	# Connect signals :
 	Dialogic.VAR.variable_was_set.connect(handle_dialogic_variable_change)
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
-	
+
 	print("Potion ready : " + str(Dialogic.VAR.get("potion_ready")))
-	
+
 	if GameScript.phase_intro :
 		Dialogic.start("intro")
 	elif GameScript.phase_end :
@@ -51,7 +52,7 @@ func _on_go_to_potion_maker_button_pressed() -> void:
 	# Get variables from the dialog :
 	GameScript.min_quantity = Dialogic.VAR.min_quantity
 	GameScript.max_distance = Dialogic.VAR.max_distance
-	
+
 	get_tree().change_scene_to_file("res://Scenes/PotionMaker.tscn")
 
 func handle_dialogic_variable_change(info:Dictionary) -> void : # Au changement de variable par Dialogic
@@ -63,14 +64,14 @@ func handle_dialogic_variable_change(info:Dictionary) -> void : # Au changement 
 		GameScript.target_color = Color(current_color_requested)
 	elif info.get("variable") == "target_color_visible" :
 		GameScript.target_color_visible = Dialogic.VAR.target_color_visible
- 
+
 func _on_timeline_ended():	# A la fin d'un dialogue
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
-	
+
 	if GameScript.phase_end == true : # On a déjà lancé le dialogue de fin, et celui ci vient de se terminer, on switch donc au game over
 		get_tree().change_scene_to_file("res://Scenes/EndGame.tscn")
-	
-	#Deux cas : 
+
+	#Deux cas :
 		#- soit le client est content, et on passe au suivant
 		#- sinon, on relance le client en réinitialisant les variables de potion réalisé
 	if GameScript.is_potion_ready or GameScript.phase_intro :	# On ne gère que le cas où la potion est déjà prête, sinon c'est potentiellement juste la fin de la demande du client
@@ -90,7 +91,3 @@ func _on_timeline_ended():	# A la fin d'un dialogue
 		# Dans tous les cas, on reset la potion, et on relance le dialogue (qui sera soit passé au client suivant, soit on revient au même client) :
 		GameScript.reset_potion()
 		launch_dialogue()
-	
-	
-	
-	

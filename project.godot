@@ -20,8 +20,8 @@ config/icon="res://Assets/dinos-focus-icon.svg"
 [autoload]
 
 GameScript="*res://Scripts/GameScript.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 AudioPlayer="*res://Scenes/audio_player.tscn"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
@@ -31,6 +31,7 @@ directories/dch_directory={
 "client_final": "res://Dialogs/client_final.dch",
 "client_gobelin_fils": "res://Dialogs/client_gobelin_fils.dch",
 "client_gobelin_pere": "res://Dialogs/client_gobelin_pere.dch",
+"client_polaritoon": "res://Dialogs/client_polaritoon.dch",
 "magic_book": "res://Assets/characters/magic_book.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
@@ -38,6 +39,7 @@ directories/dtl_directory={
 "client_1": "res://Dialogs/client_1.dtl",
 "client_2": "res://Dialogs/client_2.dtl",
 "client_final": "res://Dialogs/client_final.dtl",
+"client_polaritoon": "res://Dialogs/client_polaritoon.dtl",
 "end": "res://Dialogs/end.dtl",
 "intro": "res://Dialogs/intro.dtl"
 }
