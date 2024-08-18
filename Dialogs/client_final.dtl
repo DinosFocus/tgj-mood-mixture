@@ -1,0 +1,20 @@
+join client_final 1
+if {potion_ready} == false:
+	# If there isn't a crafted color, launch the dialog explaining the client demand
+	client_final (Base): Salut, mon ami ! J’ai besoin d’une nouvelle potion pour mes peintures.\
+Je cherche quelque chose de vibrant et inspirant, qui rappelle un coucher de soleil magnifique.\
+Une couleur joyeuse et chaleureuse en somme.
+	set {current_color_requested} = "#ED7F10"
+	set {max_distance} = 0.7
+	set {min_quantity} = 0.8
+	set {target_color_visible} = false
+else:
+	# If there is a crafted color, check it
+	if {current_color_ok} == true:
+		client_final (Base): Incroyable, tu as réussi à créer exactement ce que je voulais !\
+Merci beaucoup, tu es vraiment un artiste dans l’âme.
+		client_final (Base): Je m'en vais de ce pas peindre un magnifique paysage avec cette couleur.
+	else:
+		client_final (Base): Là, ce n'est pas un joyeux petit accident, c'est un désastre !\
+Je t'ai demandé une couleur chaleureuse, pas une couleur qui me glace le sang.\
+Je suis certain que tu peux faire mieux, essaie encore !

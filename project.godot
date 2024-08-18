@@ -28,12 +28,14 @@ AudioPlayer="*res://Scenes/audio_player.tscn"
 directories/dch_directory={
 "client_1": "res://Dialogs/client_1.dch",
 "client_2": "res://Dialogs/client_2.dch",
+"client_final": "res://Dialogs/client_final.dch",
 "magic_book": "res://Assets/characters/magic_book.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
 "client_1": "res://Dialogs/client_1.dtl",
 "client_2": "res://Dialogs/client_2.dtl",
+"client_final": "res://Dialogs/client_final.dtl",
 "end": "res://Dialogs/end.dtl",
 "intro": "res://Dialogs/intro.dtl"
 }
