@@ -6,6 +6,7 @@ extends Node2D
 @export var show_target = true
 
 var fill_speed = .25
+var is_pressed = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -26,11 +27,19 @@ func _on_tree_entered() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	var now_pressed = false
 	for ingredient_button in [$CyanIngredientButton, $MagentaIngredientButton, $YellowIngredientButton, $BlackIngredientButton]:
 		if ingredient_button.button_pressed:
+			now_pressed = true
 			$Potion.add_liquid(delta * fill_speed, ingredient_button.color)
 			update_buttons()
-
+	
+	# Maj du son si besoin
+	if (not is_pressed) and now_pressed:
+		$Glouglou.play()
+	if is_pressed and (not now_pressed):
+		$Glouglou.stop()
+	is_pressed = now_pressed
 
 func _on_terminer_potion_button_pressed() -> void:
 	# Return to the ClientDialog scene
