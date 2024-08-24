@@ -3,8 +3,8 @@ if {potion_ready} == false:
 	# If there isn't a crafted color, launch the dialog explaining the client demand
 	client_polaritoon (Base): Hello world!\
 J'ai dû me matérialiser auprès de vous pour vous amener une requête.
-	client_polaritoon: Voyez-vous, j'aimerais qu'on m'aide à faire le plein... d'hexadécimal.\
-Ceci à fin de rétablir mon équilibre intérieur.
+	client_polaritoon (Base): Voyez-vous, j'aimerais qu'on m'aide à faire le plein... d'hexadécimal.\
+Ceci afin de rétablir mon équilibre intérieur.
 	set {current_color_requested} = "#808080"
 	set {max_distance} = 0.2
 	set {min_quantity} = 1
@@ -15,4 +15,4 @@ else:
 		client_polaritoon (Base): Merci pour cette mixture sans saveur. C'est exactement ce dont j'avais besoin.
 	else:
 		client_polaritoon (Base): Hmm ce n'est pas très carré tout ça... enfin... je veux dire... pas très hexagonal.
-		Je vais en perdre mon zen. À moi, il ne me faut pas trop d'excès.
+		client_polaritoon (Base): Je vais en perdre mon zen. À moi, il ne faut pas trop d'excès.

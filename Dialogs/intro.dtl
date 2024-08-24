@@ -1,8 +1,9 @@
 join magic_book 1 [animation="Bounce In" length="1" wait="true"]
 magic_book (Base): 🎵 Le soleil vient de se lever,\
-Encore une belle journée\
-Et elle va bientôt arriver, la pile de factures à payer 🎵
-magic_book: Et oui ! C'est pas parce que je suis un super agenda que tu vas pouvoir te la couler douce !
+Encore une belle journée,\
+Et elle va bientôt arriver,\
+La pile de factures à payer 🎵
+magic_book: Eh oui ! C'est pas parce que je suis un super agenda que tu vas pouvoir te la couler douce !
 magic_book: Au programme aujourd'hui \:\
 - Écouter les clients se plaindre pendant des heures.\
 - Réussir à deviner ce qu'ils peuvent bien vouloir.\

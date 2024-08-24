@@ -1,7 +1,7 @@
 join client_2 1
 if {potion_ready} == false:
 	# If there isn't a crafted color, launch the dialog explaining the client demand
-	client_2 (Base): *murmures inintelligibles* (Mais que peut bien vouloir ce mage là ?)
+	client_2 (Base): *murmures inintelligibles* (Mais que peut bien vouloir ce mage-là ?)
 	set {current_color_requested} = "#0000FF"
 	set {max_distance} = 0.7
 	set {min_quantity} = 0.8
