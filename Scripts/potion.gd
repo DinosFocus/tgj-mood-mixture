@@ -2,23 +2,21 @@ extends Node2D
 
 var Mixbox = preload("res://addons/mixbox/mixbox.gd")
 
-var color = Color.BLACK
-var target_color = Color.RED
+var color = Color.WHITE
+var target_color = Color.BLACK
 var max_distance = .5
 var quantity = 0
 var min_quantity = .5
 
-var bottom_height
-var slope_height
+var bottom_y
 var max_height
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	bottom_height = $Liquid.polygon[0].y
-	slope_height = $Liquid.polygon[1].y
-	max_height = $Liquid.polygon[2].y
+	bottom_y = $Liquid.region_rect.end.y
+	max_height = $Liquid.region_rect.size.y
 	update_height()
-	$Sprite2D.modulate = Color(0, 0, 0, .8)
+	$Container.modulate = Color(0, 0, 0, .8)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -27,12 +25,10 @@ func _process(delta: float) -> void:
 
 
 func update_height() -> void:
-	var height = quantity * (max_height-bottom_height) + bottom_height
-	$Liquid.polygon[2].y = height
-	$Liquid.polygon[3].y = height
-	var slope_progress = clamp((height - bottom_height) / (slope_height - bottom_height), 0, 1)
-	$Liquid.polygon[2].x = $Liquid.polygon[0].x + ($Liquid.polygon[1].x - $Liquid.polygon[0].x) * slope_progress
-	$Liquid.polygon[3].x = $Liquid.polygon[5].x + ($Liquid.polygon[4].x - $Liquid.polygon[5].x) * slope_progress
+	var height = quantity * max_height
+	$Liquid.region_rect.position.y = bottom_y - height
+	$Liquid.region_rect.size.y = height
+	$Liquid.offset.y = (max_height - height) / 2 
 
 
 func add_liquid(quant: float, col: Color) -> void:
@@ -47,20 +43,20 @@ func add_liquid(quant: float, col: Color) -> void:
 
 	var ratio = real_quantity / quantity
 	color = Mixbox.lerp(color, col, ratio)
-	$Liquid.color = color
-	$Sprite2D.modulate.r = color.r * quantity * 4 / 5
-	$Sprite2D.modulate.g = color.g * quantity * 4 / 5
-	$Sprite2D.modulate.b = color.b * quantity * 4 / 5
+	$Liquid.modulate = color
+	$Container.modulate.r = color.r * quantity * 4 / 5
+	$Container.modulate.g = color.g * quantity * 4 / 5
+	$Container.modulate.b = color.b * quantity * 4 / 5
 	update_height()
 
 
 func empty_liquid() -> void:
 	quantity = 0
 	color = Color.BLACK
-	$Liquid.color = color
-	$Sprite2D.modulate.r = 0
-	$Sprite2D.modulate.g = 0
-	$Sprite2D.modulate.b = 0
+	$Liquid.modulate = color
+	$Container.modulate.r = 0
+	$Container.modulate.g = 0
+	$Container.modulate.b = 0
 	update_height()
 
 

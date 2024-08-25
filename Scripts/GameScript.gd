@@ -7,7 +7,7 @@ var phase_end = false # Whether or not the end must be done
 
 # Variables propres à une potion :
 var target_color = Color.BLACK
-var max_distance = 1
+var max_distance = 1.0
 var min_quantity = .5
 var score_max_grantable = 100
 var target_color_visible = false
@@ -41,6 +41,6 @@ func add_score() :
 	var distance_relative = distance_to_target/distance_max # Distance entre 0 et 1
 	if distance_relative <= 0.2 :
 		score += score_max_grantable
-	else : 
+	else :
 		score += score_max_grantable * (1 - distance_relative)
 	score = ceil(score)

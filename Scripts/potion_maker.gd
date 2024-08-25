@@ -1,8 +1,8 @@
 extends Node2D
 
-@export var target_color = GameScript.target_color
-@export var max_distance = GameScript.max_distance
-@export var min_quantity = GameScript.min_quantity
+@export var target_color = Color.BLACK
+@export var max_distance = .5
+@export var min_quantity = .5
 @export var show_target = true
 
 var fill_speed = .25

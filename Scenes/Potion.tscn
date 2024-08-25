@@ -1,14 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://gonv7wpm3ylu"]
+[gd_scene load_steps=4 format=3 uid="uid://gonv7wpm3ylu"]
 
 [ext_resource type="Script" path="res://Scripts/potion.gd" id="1_jvthp"]
+[ext_resource type="Texture2D" uid="uid://vvcge0pnxpav" path="res://Assets/beaker-fill.svg" id="2_kau0m"]
 [ext_resource type="Texture2D" uid="uid://cetjrgiy8x5y0" path="res://Assets/besher.svg" id="3_exsbm"]
 
 [node name="Potion" type="Node2D"]
 script = ExtResource("1_jvthp")
 
-[node name="Liquid" type="Polygon2D" parent="."]
-antialiased = true
-polygon = PackedVector2Array(38, 66, 50, 54, 50, -66, -50, -66, -50, 54, -38, 66)
+[node name="Liquid" type="Sprite2D" parent="."]
+texture = ExtResource("2_kau0m")
+region_enabled = true
+region_rect = Rect2(0, 30, 192, 132)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Container" type="Sprite2D" parent="."]
 texture = ExtResource("3_exsbm")

@@ -7,7 +7,7 @@ J'ai dû me matérialiser auprès de vous pour vous amener une requête.
 Ceci afin de rétablir mon équilibre intérieur.
 	set {current_color_requested} = "#808080"
 	set {max_distance} = 0.2
-	set {min_quantity} = 1
+	set {min_quantity} = 1.0
 	set {target_color_visible} = false
 else:
 	# If there is a crafted color, check it
