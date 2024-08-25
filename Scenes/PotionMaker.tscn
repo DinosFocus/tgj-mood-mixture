@@ -19,8 +19,7 @@ scale = Vector2(1.5, 1.26562)
 texture = ExtResource("2_g41rp")
 
 [node name="Potion" parent="." instance=ExtResource("1_gkpg3")]
-position = Vector2(0, -96)
-scale = Vector2(0.75, 0.75)
+position = Vector2(0, -88)
 
 [node name="CyanIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
 offset_left = -288.0

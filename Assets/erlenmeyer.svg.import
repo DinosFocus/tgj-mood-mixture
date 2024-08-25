@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hlcbx1i82jge"
-path="res://.godot/imported/besher_blanc_transparent.png-aeb3de868c9022c2e66351805d903ff2.ctex"
+uid="uid://d3lf6j6t8frvt"
+path="res://.godot/imported/erlenmeyer.svg-e3c4c20d4edade154afa5ace989fc6fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/besher_blanc_transparent.png"
-dest_files=["res://.godot/imported/besher_blanc_transparent.png-aeb3de868c9022c2e66351805d903ff2.ctex"]
+source_file="res://Assets/erlenmeyer.svg"
+dest_files=["res://.godot/imported/erlenmeyer.svg-e3c4c20d4edade154afa5ace989fc6fe.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
