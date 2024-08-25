@@ -20,7 +20,7 @@ config/icon="res://Assets/dinos-focus-icon.svg"
 [autoload]
 
 GameScript="*res://Scripts/GameScript.gd"
-AudioPlayer="*res://Scenes/audio_player.tscn"
+AudioPlayer="*res://Scenes/AudioPlayer.tscn"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]

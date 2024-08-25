@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wdyehidbpx3h"
-path="res://.godot/imported/gobelin_tenebreux.png-db84fc9685f2e4071fb8009a16211db4.ctex"
+uid="uid://befpccdo2kj42"
+path="res://.godot/imported/blue_mage.png-75c8732190061aa7cf17bff157b85788.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/gobelin_tenebreux.png"
-dest_files=["res://.godot/imported/gobelin_tenebreux.png-db84fc9685f2e4071fb8009a16211db4.ctex"]
+source_file="res://Assets/Characters/blue_mage.png"
+dest_files=["res://.godot/imported/blue_mage.png-75c8732190061aa7cf17bff157b85788.ctex"]
 
 [params]
 

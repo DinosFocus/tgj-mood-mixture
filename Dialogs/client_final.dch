@@ -17,7 +17,7 @@
 "portraits": {
 "Base": {
 "export_overrides": {
-"image": "\"res://Assets/characters/bob_ross.png\""
+"image": "\"res://Assets/Characters/bob_ross.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 20),

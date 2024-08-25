@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbuv7tke3n8nu"
-path="res://.godot/imported/red_mage.png-e2f4f0e9c1624a85ad88a6b186557859.ctex"
+uid="uid://o2p33uwm8v16"
+path="res://.godot/imported/Shop.png-0cf8daa5bed0c8149c5c36ed070b7f00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/red_mage.png"
-dest_files=["res://.godot/imported/red_mage.png-e2f4f0e9c1624a85ad88a6b186557859.ctex"]
+source_file="res://Assets/Backgrounds/Shop.png"
+dest_files=["res://.godot/imported/Shop.png-0cf8daa5bed0c8149c5c36ed070b7f00.ctex"]
 
 [params]
 

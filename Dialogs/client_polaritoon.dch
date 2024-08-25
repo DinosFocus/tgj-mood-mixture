@@ -17,7 +17,7 @@
 "portraits": {
 "Base": {
 "export_overrides": {
-"image": "\"res://Assets/characters/polaritoon.png\""
+"image": "\"res://Assets/Characters/polaritoon.png\""
 },
 "mirror": false,
 "offset": Vector2(0, -240),

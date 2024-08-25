@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2oigng8h658c"
-path="res://.godot/imported/Button.png-ca8b7167916678dbcfa48e8f5cffe647.ctex"
+uid="uid://bhaw5qgk8cld1"
+path="res://.godot/imported/gobelin_resplendissant.png-0fcd9c822739e95fc3d661fdfa71df42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Button.png"
-dest_files=["res://.godot/imported/Button.png-ca8b7167916678dbcfa48e8f5cffe647.ctex"]
+source_file="res://Assets/Characters/gobelin_resplendissant.png"
+dest_files=["res://.godot/imported/gobelin_resplendissant.png-0fcd9c822739e95fc3d661fdfa71df42.ctex"]
 
 [params]
 

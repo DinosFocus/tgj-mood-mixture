@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhaw5qgk8cld1"
-path="res://.godot/imported/gobelin_resplendissant.png-4a8e0d0d828c2caef3595f2601febdca.ctex"
+uid="uid://bbuv7tke3n8nu"
+path="res://.godot/imported/red_mage.png-e5ea567f55d44e5354c3c15e1a9ac216.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/gobelin_resplendissant.png"
-dest_files=["res://.godot/imported/gobelin_resplendissant.png-4a8e0d0d828c2caef3595f2601febdca.ctex"]
+source_file="res://Assets/Characters/red_mage.png"
+dest_files=["res://.godot/imported/red_mage.png-e5ea567f55d44e5354c3c15e1a9ac216.ctex"]
 
 [params]
 

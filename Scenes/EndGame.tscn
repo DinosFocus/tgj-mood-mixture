@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cfh74ug3yhlhx"]
 
-[ext_resource type="Script" path="res://Scenes/end_game.gd" id="1_bi6h8"]
-[ext_resource type="Texture2D" uid="uid://o2p33uwm8v16" path="res://Assets/Background/Shop.png" id="2_4xs1r"]
+[ext_resource type="Script" path="res://Scripts/end_game.gd" id="1_bi6h8"]
+[ext_resource type="Texture2D" uid="uid://o2p33uwm8v16" path="res://Assets/Backgrounds/Shop.png" id="2_4xs1r"]
 
 [node name="EndGame" type="Node2D"]
 script = ExtResource("1_bi6h8")
