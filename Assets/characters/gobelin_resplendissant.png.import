@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhaw5qgk8cld1"
-path="res://.godot/imported/client_gobelin_pere.png-04cc735f6c59e7cdaf52d714bfe1c0db.ctex"
+path="res://.godot/imported/gobelin_resplendissant.png-4a8e0d0d828c2caef3595f2601febdca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/client_gobelin_pere.png"
-dest_files=["res://.godot/imported/client_gobelin_pere.png-04cc735f6c59e7cdaf52d714bfe1c0db.ctex"]
+source_file="res://Assets/characters/gobelin_resplendissant.png"
+dest_files=["res://.godot/imported/gobelin_resplendissant.png-4a8e0d0d828c2caef3595f2601febdca.ctex"]
 
 [params]
 
