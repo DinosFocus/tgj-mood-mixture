@@ -26,6 +26,7 @@ offset_top = 24.0
 offset_right = -96.0
 offset_bottom = 216.0
 scale = Vector2(0.75, 0.75)
+tooltip_text = "Verser du cyan"
 color = Color(0, 1, 1, 1)
 
 [node name="MagentaIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
@@ -34,6 +35,7 @@ offset_top = 24.0
 offset_right = 48.0
 offset_bottom = 216.0
 scale = Vector2(0.75, 0.75)
+tooltip_text = "Verser du magenta"
 color = Color(1, 0, 1, 1)
 
 [node name="YellowIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
@@ -42,6 +44,7 @@ offset_top = 24.0
 offset_right = 192.0
 offset_bottom = 216.0
 scale = Vector2(0.75, 0.75)
+tooltip_text = "Verser du jaune"
 color = Color(1, 1, 0, 1)
 
 [node name="BlackIngredientButton" parent="." instance=ExtResource("3_3n1m5")]
@@ -50,6 +53,7 @@ offset_top = 24.0
 offset_right = 336.0
 offset_bottom = 216.0
 scale = Vector2(0.75, 0.75)
+tooltip_text = "Verser du noir"
 color = Color(0, 0, 0, 1)
 
 [node name="ResetFormButton" parent="." instance=ExtResource("4_8ovmk")]
