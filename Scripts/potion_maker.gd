@@ -16,15 +16,8 @@ func _on_tree_entered() -> void:
 	$Potion.target_color = GameScript.target_color
 	$Potion.max_distance = GameScript.max_distance
 	$Potion.min_quantity = GameScript.min_quantity
-	show_target = GameScript.target_color_visible
-	$TargetColor/Rect.color = target_color
+	$TargetColor.set_color_and_visibility(GameScript.target_color, GameScript.target_color_visible)
 	update_buttons()
-	if show_target:
-		$TargetColor/Rect.visible = true
-		$TargetColor/Unknown.visible = false
-	else:
-		$TargetColor/Rect.visible = false
-		$TargetColor/Unknown.visible = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -41,11 +34,6 @@ func _process(delta: float) -> void:
 	if is_pressed and (not now_pressed):
 		$Glouglou.stop()
 	is_pressed = now_pressed
-
-func _on_terminer_potion_button_pressed() -> void:
-	# Return to the ClientDialog scene
-	$Potion.color = Color(1, 0, 0, 0)  # Force color to Red
-	_on_submit_form_button_pressed()
 
 
 func update_buttons() -> void:

@@ -1,53 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://djm3hkstwicuu"]
+[gd_scene load_steps=4 format=3 uid="uid://djm3hkstwicuu"]
 
-[sub_resource type="GDScript" id="GDScript_lhw7w"]
-script/source = "extends Node
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+[ext_resource type="Texture2D" uid="uid://df6x74p7cr7ue" path="res://Assets/balloon-fill.svg" id="1_7oml4"]
+[ext_resource type="Script" path="res://Scripts/target_color.gd" id="1_84vtx"]
+[ext_resource type="Texture2D" uid="uid://cojaxceiwf2ss" path="res://Assets/balloon-stroke.svg" id="2_xt57k"]
 
+[node name="TargetColor" type="Node2D"]
+script = ExtResource("1_84vtx")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-"
+[node name="Liquid" type="Sprite2D" parent="."]
+texture = ExtResource("1_7oml4")
 
-[node name="TargetColor" type="Node"]
-script = SubResource("GDScript_lhw7w")
+[node name="Container" type="Sprite2D" parent="."]
+texture = ExtResource("2_xt57k")
 
-[node name="LabelObjectif" type="Label" parent="."]
-offset_left = 408.0
-offset_top = 16.0
-offset_right = 568.0
-offset_bottom = 80.0
-theme_override_font_sizes/font_size = 35
-text = "Objectif :"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Rect" type="Polygon2D" parent="."]
-position = Vector2(-440, -48)
-antialiased = true
-polygon = PackedVector2Array(1024, 64, 1184, 64, 1184, 128, 1024, 128)
-
-[node name="Unknown" type="Label" parent="."]
+[node name="Placeholder" type="Label" parent="."]
 visible = false
-offset_left = 584.0
-offset_top = 16.0
-offset_right = 744.0
-offset_bottom = 80.0
-theme_override_font_sizes/font_size = 35
+offset_left = -64.0
+offset_top = -24.0
+offset_right = 64.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 48
 text = "???"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Line2D" type="Line2D" parent="."]
-position = Vector2(584, 17)
-points = PackedVector2Array(0, -1, 160, -1, 160, 63, 0, 63)
-closed = true
-width = 2.0
-default_color = Color(0, 0, 0, 0.8)
-joint_mode = 2
-begin_cap_mode = 2
-end_cap_mode = 2
-antialiased = true

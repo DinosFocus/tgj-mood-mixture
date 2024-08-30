@@ -52,7 +52,7 @@ func add_liquid(quant: float, col: Color) -> void:
 
 func empty_liquid() -> void:
 	quantity = 0
-	color = Color.BLACK
+	color = Color.WHITE
 	$Liquid.modulate = color
 	$Container.modulate.r = 0
 	$Container.modulate.g = 0
