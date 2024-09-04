@@ -17,11 +17,11 @@
 "portraits": {
 "Base": {
 "export_overrides": {
-"image": "\"res://Assets/characters/client_gobelin_pere.png\""
+"image": "\"res://Assets/Characters/gobelin_resplendissant.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 }
 },

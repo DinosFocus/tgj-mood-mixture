@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hlcbx1i82jge"
-path="res://.godot/imported/besher_blanc_transparent.png-aeb3de868c9022c2e66351805d903ff2.ctex"
+uid="uid://caifktiw6uge7"
+path="res://.godot/imported/magic_book.png-14fa84f86cf24ffe439e76e6319db8b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/besher_blanc_transparent.png"
-dest_files=["res://.godot/imported/besher_blanc_transparent.png-aeb3de868c9022c2e66351805d903ff2.ctex"]
+source_file="res://Assets/Characters/magic_book.png"
+dest_files=["res://.godot/imported/magic_book.png-14fa84f86cf24ffe439e76e6319db8b7.ctex"]
 
 [params]
 

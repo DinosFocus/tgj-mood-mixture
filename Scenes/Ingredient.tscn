@@ -1,15 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://cw4kdj0w8rr2x"]
+[gd_scene load_steps=4 format=3 uid="uid://cw4kdj0w8rr2x"]
 
 [ext_resource type="Script" path="res://Scripts/ingredient.gd" id="1_oj6w1"]
-[ext_resource type="Texture2D" uid="uid://dc50yex7yeppc" path="res://Assets/erlenmeyer_blanc_transparent.png" id="2_7al41"]
+[ext_resource type="Texture2D" uid="uid://twkwy3je0pwh" path="res://Assets/erlenmeyer-fill.svg" id="2_r7ely"]
+[ext_resource type="Texture2D" uid="uid://d3lf6j6t8frvt" path="res://Assets/erlenmeyer.svg" id="3_rep4p"]
 
-[node name="Ingridient" type="Node2D"]
+[node name="Ingredient" type="Node2D"]
 script = ExtResource("1_oj6w1")
 
-[node name="Liquid" type="Polygon2D" parent="."]
-polygon = PackedVector2Array(-150, -56, -264, 245, -260, 298, -229, 329, -109, 367, -2, 374, 113, 366, 213, 338, 262, 295, 265, 245, 155, -56)
+[node name="Liquid" type="Sprite2D" parent="."]
+texture = ExtResource("2_r7ely")
+offset = Vector2(0, 36)
+region_enabled = true
+region_rect = Rect2(0, 84, 192, 96)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_7al41")
+[node name="Container" type="Sprite2D" parent="."]
+texture = ExtResource("3_rep4p")
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]

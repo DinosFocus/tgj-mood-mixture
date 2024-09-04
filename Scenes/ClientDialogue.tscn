@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/client_dialogue.gd" id="1_besw2"]
 [ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://Dialogs/dialog_style/VisualNovelTextbox/custom_vn_textbox_layer.tscn" id="2_ihfv1"]
-[ext_resource type="Texture2D" uid="uid://o2p33uwm8v16" path="res://Assets/Background/Shop.png" id="3_cj30a"]
+[ext_resource type="Texture2D" uid="uid://o2p33uwm8v16" path="res://Assets/Backgrounds/Shop.png" id="3_cj30a"]
 [ext_resource type="PackedScene" uid="uid://b6v4xxtgaxf1m" path="res://Scenes/FormButton.tscn" id="3_yxgln"]
 
 [node name="Client" type="Node2D"]
@@ -23,16 +23,23 @@ color = Color(0, 0, 1, 1)
 
 [node name="VN_TextboxLayer" parent="." instance=ExtResource("2_ihfv1")]
 
-[node name="ColorRequestedRectangle" type="Polygon2D" parent="."]
-visible = false
-position = Vector2(987, 351)
-scale = Vector2(0.169657, 0.65337)
-polygon = PackedVector2Array(0, 0, 0, 84.179, 694, 83, 695.52, 1.79105)
+[node name="ScoreIcon" type="Label" parent="."]
+custom_minimum_size = Vector2(48, 48)
+offset_right = 48.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 32
+text = "💰"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="ScoreLabel" type="Label" parent="."]
-offset_left = 1.0
-offset_right = 303.0
-offset_bottom = 43.0
-text = "💰 : "
+[node name="ScoreValue" type="Label" parent="."]
+custom_minimum_size = Vector2(192, 32)
+offset_left = 48.0
+offset_top = 8.0
+offset_right = 240.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 16
+text = "0"
+vertical_alignment = 1
 
 [connection signal="pressed" from="GoToPotionMakerButton" to="." method="_on_go_to_potion_maker_button_pressed"]

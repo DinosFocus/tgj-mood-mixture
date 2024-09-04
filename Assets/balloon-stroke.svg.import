@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0cprmrheak2j"
-path="res://.godot/imported/polaritoon.png-441fab2251fff813560fa051ac65dd38.ctex"
+uid="uid://cojaxceiwf2ss"
+path="res://.godot/imported/balloon-stroke.svg-7e9fc5541e203d8433a77bb8f89cca73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/polaritoon.png"
-dest_files=["res://.godot/imported/polaritoon.png-441fab2251fff813560fa051ac65dd38.ctex"]
+source_file="res://Assets/balloon-stroke.svg"
+dest_files=["res://.godot/imported/balloon-stroke.svg-7e9fc5541e203d8433a77bb8f89cca73.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

@@ -2,9 +2,9 @@ join client_1 1
 if {potion_ready} == false:
 	# If there isn't a crafted color, launch the dialog explaining the client demand
 	client_1 (Base): Bonjour humble alchimiste.\
-Etant fortement en colère en ce moment, je souhaiterais que vous me concoctiez une potion rouge. \
+Étant fortement en colère en ce moment, je souhaiterais que vous me concoctiez une potion rouge. \
 Un rouge vif, qui me rappelle la couleur du sang.
-	client_1:  Merci bien.
+	client_1 (Base): Merci bien.
 	set {current_color_requested} = "#ff0000"
 	set {max_distance} = 0.6
 	set {min_quantity} = 0.5

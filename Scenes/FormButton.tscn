@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6v4xxtgaxf1m"]
 
-[ext_resource type="Texture2D" uid="uid://c2oigng8h658c" path="res://Assets/Background/Button.png" id="1_47d07"]
+[ext_resource type="Texture2D" uid="uid://c2oigng8h658c" path="res://Assets/Backgrounds/Button.png" id="1_47d07"]
 [ext_resource type="Script" path="res://Scripts/form_button.gd" id="1_b0eat"]
 [ext_resource type="Script" path="res://Scripts/line_2d.gd" id="3_r2u76"]
 
@@ -11,6 +11,7 @@ offset_top = -16.0
 offset_right = 96.0
 offset_bottom = 16.0
 focus_mode = 0
+theme_override_font_sizes/font_size = 16
 keep_pressed_outside = true
 text = "Faire quelque chose"
 clip_text = true
@@ -29,6 +30,7 @@ width = 2.0
 joint_mode = 2
 begin_cap_mode = 2
 end_cap_mode = 2
+antialiased = true
 script = ExtResource("3_r2u76")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

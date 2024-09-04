@@ -17,7 +17,7 @@
 "portraits": {
 "Base": {
 "export_overrides": {
-"image": "\"res://Assets/characters/magic_book.png\""
+"image": "\"res://Assets/Characters/magic_book.png\""
 },
 "mirror": false,
 "offset": Vector2(0, -200),

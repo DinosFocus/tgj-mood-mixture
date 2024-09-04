@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caifktiw6uge7"
-path="res://.godot/imported/magic_book.png-74644d25ef7f7f20d4102b6396040ef2.ctex"
+uid="uid://df6x74p7cr7ue"
+path="res://.godot/imported/balloon-fill.svg-886c615e1748887bed4b9b59ee7e3cf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/magic_book.png"
-dest_files=["res://.godot/imported/magic_book.png-74644d25ef7f7f20d4102b6396040ef2.ctex"]
+source_file="res://Assets/balloon-fill.svg"
+dest_files=["res://.godot/imported/balloon-fill.svg-886c615e1748887bed4b9b59ee7e3cf4.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

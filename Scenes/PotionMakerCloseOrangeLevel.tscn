@@ -6,3 +6,4 @@
 
 [node name="PotionMaker" parent="." instance=ExtResource("1_e7p8x")]
 target_color = Color(1, 0.25098, 0, 1)
+max_distance = 0.25

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwj63ut2whixa"
-path="res://.godot/imported/the-mysterious-blue-mage-v0-m3eccsucncuc1.png-6e6af7a04645f0f22c91d07728c1bba9.ctex"
+uid="uid://befpccdo2kj42"
+path="res://.godot/imported/blue_mage.png-75c8732190061aa7cf17bff157b85788.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/the-mysterious-blue-mage-v0-m3eccsucncuc1.png"
-dest_files=["res://.godot/imported/the-mysterious-blue-mage-v0-m3eccsucncuc1.png-6e6af7a04645f0f22c91d07728c1bba9.ctex"]
+source_file="res://Assets/Characters/blue_mage.png"
+dest_files=["res://.godot/imported/blue_mage.png-75c8732190061aa7cf17bff157b85788.ctex"]
 
 [params]
 

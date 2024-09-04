@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy6dmagd8qb7h"
-path="res://.godot/imported/bob_ross.png-fe6974e449916b8aeff8a3389edd4875.ctex"
+uid="uid://vvcge0pnxpav"
+path="res://.godot/imported/beaker-fill.svg-49676dec57d1d7517b69b9ceca249a01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/bob_ross.png"
-dest_files=["res://.godot/imported/bob_ross.png-fe6974e449916b8aeff8a3389edd4875.ctex"]
+source_file="res://Assets/beaker-fill.svg"
+dest_files=["res://.godot/imported/beaker-fill.svg-49676dec57d1d7517b69b9ceca249a01.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

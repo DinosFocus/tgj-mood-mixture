@@ -1,7 +1,7 @@
 join client_gobelin_fils 1
 if {potion_ready} == false:
 	# If there isn't a crafted color, launch the dialog explaining the client demand
-	client_gobelin_fils (Base): *Hmmrf*. (Euh... c'est le fils de l'autre gobelin, non ?)
+	client_gobelin_fils (Base): *Hmmrf.* (Euh... c'est le fils de l'autre gobelin, non ?)
 	client_gobelin_fils (Base): *Partant dans une étrange mélopée macabre :* Le monde est si triste, si sombre...\
 Ma vie est un drame sans fin, une tragédie sans espoir...
 	set {current_color_requested} = "#000000"

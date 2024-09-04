@@ -39,7 +39,7 @@ func launch_dialogue() :
 		Dialogic.start(get_current_client()) # launch dialog
 
 func update_score() :
-	$ScoreLabel.text = "💰 : " + str(GameScript.score)
+	$ScoreValue.text = str(GameScript.score)
 
 func _enter_tree() -> void:
 	update_score()
@@ -59,7 +59,6 @@ func handle_dialogic_variable_change(info:Dictionary) -> void : # Au changement 
 	if info.get("variable") =="current_color_requested" : # Only react if the current_color_requested changes
 		current_color_requested = Dialogic.VAR.current_color_requested
 		print("color :" + current_color_requested)
-		$ColorRequestedRectangle.color = current_color_requested # Get the color_requested
 		$GoToPotionMakerButton.visible = true # Activate the button to go to the potion maker scene
 		GameScript.target_color = Color(current_color_requested)
 	elif info.get("variable") == "target_color_visible" :

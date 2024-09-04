@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2oigng8h658c"
-path="res://.godot/imported/Button.png-ca8b7167916678dbcfa48e8f5cffe647.ctex"
+uid="uid://bbuv7tke3n8nu"
+path="res://.godot/imported/red_mage.png-e5ea567f55d44e5354c3c15e1a9ac216.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Button.png"
-dest_files=["res://.godot/imported/Button.png-ca8b7167916678dbcfa48e8f5cffe647.ctex"]
+source_file="res://Assets/Characters/red_mage.png"
+dest_files=["res://.godot/imported/red_mage.png-e5ea567f55d44e5354c3c15e1a9ac216.ctex"]
 
 [params]
 
