@@ -39,6 +39,8 @@ directories/dtl_directory={
 "client_1": "res://Dialogs/client_1.dtl",
 "client_2": "res://Dialogs/client_2.dtl",
 "client_final": "res://Dialogs/client_final.dtl",
+"client_gobelin_fils": "res://Dialogs/client_gobelin_fils.dtl",
+"client_gobelin_pere": "res://Dialogs/client_gobelin_pere.dtl",
 "client_polaritoon": "res://Dialogs/client_polaritoon.dtl",
 "end": "res://Dialogs/end.dtl",
 "intro": "res://Dialogs/intro.dtl"
