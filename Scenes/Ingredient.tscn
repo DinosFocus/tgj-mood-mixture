@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/ingredient.gd" id="1_oj6w1"]
 [ext_resource type="Texture2D" uid="uid://twkwy3je0pwh" path="res://Assets/erlenmeyer-fill.svg" id="2_r7ely"]
-[ext_resource type="Texture2D" uid="uid://d3lf6j6t8frvt" path="res://Assets/erlenmeyer.svg" id="3_rep4p"]
+[ext_resource type="Texture2D" uid="uid://dkeqpgsarwf2w" path="res://Assets/erlenmeyer-stroke.svg" id="3_rep4p"]
 
 [node name="Ingredient" type="Node2D"]
 script = ExtResource("1_oj6w1")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/potion.gd" id="1_jvthp"]
 [ext_resource type="Texture2D" uid="uid://vvcge0pnxpav" path="res://Assets/beaker-fill.svg" id="2_kau0m"]
-[ext_resource type="Texture2D" uid="uid://cetjrgiy8x5y0" path="res://Assets/besher.svg" id="3_exsbm"]
+[ext_resource type="Texture2D" uid="uid://jfoew4our466" path="res://Assets/beaker-stroke.svg" id="3_exsbm"]
 
 [node name="Potion" type="Node2D"]
 script = ExtResource("1_jvthp")
